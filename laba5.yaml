@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.26.0 (40646f47)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: kmeans
+  name: kmeans
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: kmeans
+  strategy: {}
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.26.0 (40646f47)
+      creationTimestamp: null
+      labels:
+        io.kompose.service: kmeans
+    spec:
+      containers:
+        - args:
+            - bash
+            - -c
+            - python src/train.py
+          image: nikitaromanoov/laba_5_kmeans_with_spark:latest
+          name: kmeans-with-spark
+          resources: {}
+      restartPolicy: Always
+status: {}
