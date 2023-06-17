@@ -18,7 +18,9 @@ https://habr.com/ru/companies/neoflex/articles/511734/
 Файл: https://github.com/nikitaromanoov/tobd_laba_8/blob/main/laba5.yaml
 
 Запуск:
+
 <img width="580" alt="image" src="https://github.com/nikitaromanoov/tobd_laba_8/assets/91135334/3764d85b-62fd-4fb2-9622-6bfd1f24cef7">
 
 Проверка работоспособности:
+
 <img width="956" alt="image" src="https://github.com/nikitaromanoov/tobd_laba_8/assets/91135334/d3e3e3d5-f896-433d-b264-e08d21293321">
