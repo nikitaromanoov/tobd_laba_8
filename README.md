@@ -6,6 +6,7 @@
 
 
 1. Создать инфраструктуру для Spark вычислений, настроить репликацию:
+
 https://spark.apache.org/docs/latest/running-on-kubernetes.html
 https://habr.com/ru/companies/neoflex/articles/511734/
 
