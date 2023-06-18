@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.26.0 (40646f47)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: kmeans
+  name: kmeans
+spec:
+  ports:
+    - name: "4041"
+      port: 4041
+      targetPort: 4041
+    - name: "8887"
+      port: 8887
+      targetPort: 8887
+  selector:
+    io.kompose.service: kmeans
+status:
+  loadBalancer: {}

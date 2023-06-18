@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.26.0 (40646f47)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: py-vitrina
+  name: py-vitrina
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: py-vitrina
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.26.0 (40646f47)
+      creationTimestamp: null
+      labels:
+        io.kompose.service: py-vitrina
+    spec:
+      containers:
+        - args:
+            - python
+            - server.py
+          image: nikitaromanoov/lab7_py_vitrina:latest
+          name: py-vitrina
+          ports:
+            - containerPort: 8103
+          resources:
+            limits:
+              cpu: "2"
+          volumeMounts:
+            - mountPath: /app/showcase
+              name: app-volume
+      restartPolicy: Always
+      volumes:
+        - name: app-volume
+          persistentVolumeClaim:
+            claimName: app-volume
+status: {}
