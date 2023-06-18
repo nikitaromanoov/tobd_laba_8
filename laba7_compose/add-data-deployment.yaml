@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.26.0 (40646f47)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: add-data
+  name: add-data
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: add-data
+  strategy: {}
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.26.0 (40646f47)
+      creationTimestamp: null
+      labels:
+        io.kompose.service: add-data
+    spec:
+      containers:
+        - args:
+            - bash
+            - -c
+            - python add_data.py
+          image: nikitaromanoov/lab7_add_data:latest
+          name: add-data
+          ports:
+            - containerPort: 7000
+          resources: {}
+      restartPolicy: Always
+status: {}
