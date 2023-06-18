@@ -75,3 +75,6 @@ https://github.com/nikitaromanoov/tobd_laba_8/blob/main/laba7_compose/vitrina-de
 <img width="957" alt="image" src="https://github.com/nikitaromanoov/tobd_laba_8/assets/91135334/42ccd4a1-dbde-472b-a331-bbc146846b9f">
 <img width="959" alt="image" src="https://github.com/nikitaromanoov/tobd_laba_8/assets/91135334/25082f41-5ca9-42c0-b159-6ec63f740bf0">
 
+5. Оптимизировать утилизацию ресурсов. Возможно упрощение инфраструктуры.
+
+https://github.com/nikitaromanoov/tobd_laba_8/tree/main/laba7_with_resources
