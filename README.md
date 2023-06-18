@@ -47,7 +47,9 @@ https://github.com/nikitaromanoov/tobd_laba_8/blob/main/laba6_compose/redis-serv
 <img width="821" alt="image" src="https://github.com/nikitaromanoov/tobd_laba_8/assets/91135334/5f0482f0-0dc5-41fa-a570-8c70a0ce1f61">
 <img width="822" alt="image" src="https://github.com/nikitaromanoov/tobd_laba_8/assets/91135334/aa8b989d-803d-4256-92f6-3701c49a3844">
 
-4. 
+4. Запустить сервис витрины данных (версии лабораторной №7) и накатить
+обновления остальных двух сервисов в кластере k8s. Проверить
+работоспособность.
 
 Для начала были получены файл из файла  docker_compose.yml:
 
